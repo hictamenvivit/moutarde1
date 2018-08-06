@@ -1,0 +1,6 @@
+{% extends "autre/base_autre1.html" %}
+
+{% block contenu %}
+<h1> {{user.username}} </h1>
+<h3> {{ user.get_number_articles }} </h3>
+{% endblock %}

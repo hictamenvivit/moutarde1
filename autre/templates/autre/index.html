@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block contenu %}
+<div class="w3-row-padding w3-padding-16 w3-center" id="food">
+
+{% for article in articles %}
+    <div class="w3-quarter">
+      
+      <h3> <a href={% url 'autre:detail' article.id %} > {{ article.titre }} </a> </h3>
+      <p> by {{article.auteur}} <p>
+      <p> {{ article.contenu }} </p>
+      
+    </div>
+{% endfor %}
+</div>
+  
+{% endblock %}
+
+
+
+{% block about %}
+
+<a href='ajouter_article'> + </a>
+
+{% endblock %}
+
+{% block footer %}
+Hello
+{% endblock %}

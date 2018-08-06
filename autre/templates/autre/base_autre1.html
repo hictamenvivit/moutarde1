@@ -1,0 +1,8 @@
+{% extends "base1.html" %}
+
+{% block menu_av_ut %}
+{% if user.is_authenticated %}
+<span> <a href="{% url 'autre:ajouter_article' %}"> Ecrire </a> </span>
+<p> <a href="{% url 'horaires:index' %}"> Horaires de cinémas </p>
+{% endif %}
+{% endblock %}

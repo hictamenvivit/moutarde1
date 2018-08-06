@@ -1,0 +1,15 @@
+{% extends 'autre/base_autre1.html' %}
+
+
+{% block contenu %}
+<h1> Horaires des cinémas : </h1>
+{% for nom_cinema,cinema in dico.items %}
+
+    <h2>{{nom_cinema}}</h2>
+    {% for film in cinema %}
+        <p>{{film.titre}} ({{film.directors}})  {{film.join_horaires}}</p>
+    {% endfor %}
+    <br />
+
+{% endfor %}
+{% endblock %}

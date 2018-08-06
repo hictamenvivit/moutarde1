@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block contenu %}
+
+<h1> {{article.titre}} </h1>
+
+<p> {{article.contenu}} </p>
+
+<img src= {{article.photo.url}} height="200" width="200" />
+<br />
+<a href={% url 'autre:index' %}> Retour </a>
+{% endblock %}
+
+<p> zerfzef </p>

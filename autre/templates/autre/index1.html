@@ -1,0 +1,17 @@
+{% extends 'autre/base_autre1.html' %}
+
+{% block contenu %}
+
+{% for article in articles %}
+<li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src={{article.photo.url}} alt="" />
+            <figcaption>
+              <h2> {{article.titre}} </span></h2>
+              <p>par {{article.auteur}}</p>
+              <a href="{% url 'autre:detail' article.id %}">View more</a> 
+             </figcaption>
+          </figure>
+</li>
+{% endfor %}
+
+{% endblock %}
