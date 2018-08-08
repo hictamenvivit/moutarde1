@@ -35,7 +35,7 @@ ALLOWED_HOSTS = [
     'node22.codenvy.io',
     'node19.codenvy.io',
     'testserver',
-    'herokuapp.com',
+    'moutarde.herokuapp.com',
 ]
 ALLOWED_HOSTS += ['node{0}.codenvy.io'.format(k) for k in range(100)]
 
