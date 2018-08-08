@@ -24,11 +24,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 try:
     from no_commit import key
     SECRET_KEY = key
+    DEBUG = True
 except ImportError:
     SECRET_KEY = 'bidule'
-
+    DEBUG = False
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
 
 ALLOWED_HOSTS = [
     'node22.codenvy.io',
