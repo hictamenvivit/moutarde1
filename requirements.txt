@@ -22,7 +22,6 @@ pydocstyle==2.1.1
 pyflakes==2.0.0
 pytest==3.6.2
 python-dateutil==1.5
-python-language-server==0+unknown
 pytz==2018.5
 requests==2.19.1
 rope==0.10.7
