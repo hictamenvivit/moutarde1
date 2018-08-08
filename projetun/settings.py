@@ -42,8 +42,6 @@ ALLOWED_HOSTS += ['node{0}.codenvy.io'.format(k) for k in range(100)]
 
 INSTALLED_APPS = [
     'autre.apps.AutreConfig',
-    'polls.apps.PollsConfig',
-    'choses.apps.ChosesConfig',
     'horaires.apps.HorairesConfig',
     'accounts.apps.AccountsConfig',
     'django.contrib.admin',
